@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-folio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "firebase": "firebase"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "@nuxt/content": "^1.3.2",
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "axios": "^0.19.2",
+    "nuxt": "^2.13.0",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-webfontloader": "^1.1.0",
+    "scrollmagic": "^2.0.7",
+    "vue-scrollmagic": "^1.2.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.6.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2"
+  }
+}
