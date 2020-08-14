@@ -92,10 +92,14 @@
       transform: translate(-50%, 100%);
     }
     @include mq(medium) {
-      color: #FF2A02!important;
       &:before {
         content: none;
       }
+    }
+  }
+  .nuxt-link-exact-active {
+    @include mq(medium) {
+      color: #FF2A02!important;
     }
   }
   .top {
@@ -107,15 +111,7 @@
     .nuxt-link-exact-active {
       position: relative;
       &:before {
-        content: '';
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        bottom: 0;
-        left: 50%;
-        background-color: #FF2A02;
-        border-radius: 50%;
-        transform: translate(-50%, 100%);
+        content: none;
       }
     }
   }
