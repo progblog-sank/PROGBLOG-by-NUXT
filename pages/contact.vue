@@ -9,8 +9,8 @@
       </SecondHead>
       <p class="intro" >「サイト制作」、「サイト運用」、「パートナーの募集」など下記フォームからお問合せください。</p>
       <div class="form-layout">
-        <form method="POST"  data-netlify="true" >
-          <input type="hidden" name="contact-form" value="contact">
+        <form method="POST"  data-netlify="true" action="/success.html">
+          <input type="hidden" name="contact-form" value="contact" >
           <div class="name">
             <p class="name-info">お名前</p>
             <input class="write" type="text" name="name" required>
