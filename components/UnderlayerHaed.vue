@@ -26,7 +26,7 @@
 }
 .heading-umder-1 {
   position: relative;
-  background-image: url(/_nuxt/assets/img/k-mv.jpg);
+  background-image: url("~@/assets/img/k-mv.jpg");
   background-size: cover;
   background-repeat: no-repeat;
     &:before {
