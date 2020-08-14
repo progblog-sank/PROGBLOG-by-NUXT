@@ -6,6 +6,25 @@
 </div>
 </template>
 <style lang="scss" scoped >
+@mixin mq($breakpoint: medium) {
+  @if $breakpoint == xsmall {
+    @media screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $breakpoint == small {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media screen and (max-width: 1000px) {
+      @content;
+    }
+  }
+}
 .pointer-area {
   cursor: none;
   .cursor {
@@ -27,6 +46,9 @@
     //   background: #ff2a0269;
     //   transition: .25s;
     // }
+  @include mq(medium) {
+    display: none;
+  }
   }
   .follower {
     pointer-events: none;
@@ -42,6 +64,9 @@
     transition: transform 0.2s;
     transition-timing-function: ease-out;
     z-index: 999;
+  @include mq(medium) {
+    display: none;
+  }
     &.active-hover {
       background: #ff2a0269;
       transition: .25s;

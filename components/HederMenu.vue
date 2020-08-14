@@ -76,7 +76,7 @@
     justify-content: space-between;
     transition: .5s;
     @include mq(medium) {
-      padding: 20px 1.5%;
+      padding: 20px 10px;
     }
     .logo {
       width: 100%;
@@ -127,7 +127,7 @@
             }
           }
           @include mq(small){
-            right: 40px;
+            right: 50px;
           }
         }
       }
@@ -187,7 +187,7 @@
           position: absolute;
           width: 20px;
           height: 16px;
-          right: 1.5%;
+          right: 10px;
           top: 50%;
           transform: translate(0, -50%);
           span {
