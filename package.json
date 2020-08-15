@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "export": "nuxt export",
+    "export": "npm run-script build && npm run-script export",
     "serve": "nuxt serve",
     "firebase": "firebase"
   },
