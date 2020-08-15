@@ -17,7 +17,7 @@
             <li v-on:click="togleClick"><nuxt-link to="/blog">BLOG</nuxt-link></li>
             <li v-on:click="togleClick"><nuxt-link to="/project">PROJECT</nuxt-link></li>
             <li v-on:click="togleClick"><nuxt-link to="/contact">CONTACT</nuxt-link></li>
-            <li v-on:click="togleClick"><a href="https://progblog-web.com/" target="_blank">WordPressサイト</a></li>
+            <li v-on:click="togleClick"><a href="https://progblog-web.com/" target="_blank" rel="noopener">WordPressサイト</a></li>
           </ul>
         </div>
         <div class="menu-togle" v-on:click="togleClick" v-bind:class="{'is-active':menuDisplay}"><span></span><span></span><span></span></div>
