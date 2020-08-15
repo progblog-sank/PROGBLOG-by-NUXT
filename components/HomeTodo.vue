@@ -158,7 +158,7 @@
  background-blend-mode: multiply,multiply;
       bottom: 0;
       left: 0;
-      // color: #ffffff;
+      color: #ffffff;
       font-size: 12px;
       text-align: center;
       z-index: 1;
