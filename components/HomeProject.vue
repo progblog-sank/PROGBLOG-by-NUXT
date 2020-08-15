@@ -6,9 +6,9 @@
         <h2 class="head"><span class="hdg">ウェブ制作実績のご紹介</span></h2>
       </div>
       <ul class="project-list">
-        <li><img src="~/assets/img/project_01.png"></li>
-        <li><img src="~/assets/img/project_02.png"></li>
-        <li><img src="~/assets/img/project_03.png"></li>
+        <li><img src="~/assets/img/project_01.png" alt="サイト画像"></li>
+        <li><img src="~/assets/img/project_02.png" alt="サイト画像"></li>
+        <li><img src="~/assets/img/project_03.png" alt="サイト画像"></li>
       </ul>
       <GlobalButton to="/contact">事例・実績一覧はお問合せください</GlobalButton>
     </ScrollAction>
