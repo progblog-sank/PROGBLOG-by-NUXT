@@ -51,6 +51,9 @@
   .head {
     .hdg {
       font-size: 30px;
+      @include mq(small) {
+        font-size: 28px;
+      }
     }
   }
 }

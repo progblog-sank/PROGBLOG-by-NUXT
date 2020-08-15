@@ -57,8 +57,7 @@ export default {
         title: 'ABOUT',
         description: 'このページではweb制作フリーランスPROGBLOGの「できること」「スキル」「経歴」などをご紹介させていただきます',
         type: 'article',
-        url: 'https://example.com/about',
-        image: 'https://example.com/img/ogp/test.jpg',
+        url: 'https://nuxt.progblog-web.com/about',
       },
     }
   },

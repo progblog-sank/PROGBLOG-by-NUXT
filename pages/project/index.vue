@@ -5,14 +5,18 @@
     </UnderlayerHaed>
     <div class="l-content">
       <SecondHead>
-        <template v-slot:secondHead>最新記事一覧</template>
+        <template v-slot:secondHead>実績一覧</template>
       </SecondHead>
-      <div class="blog-block">
-        <div class="blog-block-list" v-for="(item, index) in items" :key="index">
-          <nuxt-link :to="'blog/' + item.id">
+      <p class="intro" >ここでは作成した「サイト」・「ツール」を紹介していきます。</p>
+      <div class="global-button">
+        <a href="https://progblog-web.com/work/" target="_blank">wordpress制作などの実績はこちら</a>
+      </div>
+      <div class="project-block">
+        <div class="project-block-list" v-for="(item, index) in items" :key="index">
+          <nuxt-link :to="item.url">
             <p class="key-catch"> <img :src="item.key.url" alt=""></p>
-            <div class="blog-info">
-              <h3 class="blog-title">{{ item.title }}</h3>
+            <div class="project-info">
+              <h3 class="project-title">{{ item.title }}</h3>
               <div class="infomation">
                 <p class="cat-stamp">{{ item.cat }}</p>
                 <p class="time-stamp">公開日：{{ dateFormat(item.createdAt) }}</p>
@@ -32,10 +36,10 @@ export default {
   data () {
   return {
       meta: {
-        title: 'BLOG',
-        description: 'このページではweb制作フリーランスPROGBLOGのBLOGを紹介させていただきます',
+        title: 'PROJECT',
+        description: 'このページではweb制作フリーランスPROGBLOGのPROJECTを紹介させていただきます',
         type: 'article',
-        url: 'https://nuxt.progblog-web.com/about',
+        url: 'https://nuxt.progblog-web.com/project',
       },
     }
   },
@@ -54,7 +58,7 @@ export default {
   },
   async asyncData() {
     const{data} = await axios.get(
-      'https://nuxt-folio.microcms.io/api/v1/blog',
+      'https://nuxt-folio.microcms.io/api/v1/project',
       {
         headers: { 'X-API-KEY': '99195fd3-127a-41ac-ba25-514c7b97e7e2' }
       }
@@ -96,7 +100,7 @@ export default {
     }
   }
 }
-.blog-block {
+.project-block {
   display: flex;
   flex-flow: wrap;
   margin-top: 40px;
@@ -152,9 +156,9 @@ export default {
     a {
       height: 100%;
     }
-    .blog-info {
+    .project-info {
       padding: 10px 20px 20px 10px;
-      .blog-desc {
+      .project-desc {
         margin-top: 20px;
       }
       .infomation {

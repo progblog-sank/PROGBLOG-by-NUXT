@@ -1,7 +1,7 @@
 <template>
 <div class="key-visual">
   <div class="key-visual-inner">
-    <h1 class="haeding-1"><span>お客様のニーズに答える</span><br>神奈川在住<br>フリーのウェブエンジニア</h1>
+    <h1 class="haeding-1"><span>お客様のニーズに応える</span><br>神奈川在住<br>フリーのウェブエンジニア</h1>
     <!-- <div class="global-button">
       <nuxt-link to="/contact">お気軽にご相談ください</nuxt-link>
     </div> -->

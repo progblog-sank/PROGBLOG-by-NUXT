@@ -4,14 +4,14 @@
       <template v-slot:underHead>BLOG</template>
     </UnderlayerHaed> -->
     <div class="l-content">
-      <div class="blog-detail">
-        <div class="blog-head">
+      <div class="project-detail">
+        <div class="project-head">
           <h2>{{ item.title }}</h2>
         </div>
         <p class="key-catch"> <img :src="item.key.url" alt=""></p>
-        <div class="blog-detail-content" v-html="item.body"></div>
+        <div class="project-detail-content" v-html="item.body"></div>
       </div>
-      <GlobalButton to="/blog">記事一覧に戻る</GlobalButton>
+      <GlobalButton to="/project">記事一覧に戻る</GlobalButton>
     </div>
   </div>
 </template>
@@ -20,15 +20,15 @@
 import axios from "axios";
 export default {
   mounted() {
-    const blogLink = document.querySelectorAll('.blog-detail-content a');
-    blogLink.forEach(function(links){
+    const projectLink = document.querySelectorAll('.project-detail-content a');
+    projectLink.forEach(function(links){
       links.insertAdjacentHTML('beforeend', '<i class="fas fa-link fa-fw"></i>');
       // const outLink = document.querySelectorAll('a[target="_blank"]')
     });
   },
   async asyncData({ params }) {
     const { data } = await axios.get(
-      `https://nuxt-folio.microcms.io/api/v1/blog/${params.id}`,
+      `https://nuxt-folio.microcms.io/api/v1/project/${params.id}`,
       {
         headers: { 'X-API-KEY': '99195fd3-127a-41ac-ba25-514c7b97e7e2' }
       }
@@ -43,7 +43,7 @@ export default {
         // title: this.item.title,
         // description: 'このページではweb制作フリーランスPROGBLOGのBLOGを紹介させていただきます',
         type: 'article',
-        url: 'https://nuxt.progblog-web.com/',
+        url: 'https://nuxt.progblog-web.com/about',
       },
     }
   },
@@ -83,8 +83,8 @@ export default {
     }
   }
 }
-.blog-detail {
-  .blog-head {
+.project-detail {
+  .project-head {
     width: 80%;
     margin: 0 auto;
     font-size: 30px;
@@ -106,7 +106,7 @@ export default {
       }
     }
   }
-  .blog-detail-content {
+  .project-detail-content {
     margin-top: 60px;
     /deep/ h1 {
       margin: 2em 0 1em 0;

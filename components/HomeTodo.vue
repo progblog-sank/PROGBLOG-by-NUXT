@@ -18,6 +18,9 @@
         </ul>
       </ScrollAction>
     </div>
+    <div class="fix-desc">
+      <p>気になる項目はクリックしてみてください。</p>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped >
@@ -43,27 +46,6 @@
 .todo-block {
   background-color: #EFEFEF;
   position: relative;
-  // cursor: none;
-  // .cursor, .follower {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   border-radius: 50%;
-  //   cursor: none;
-  //   pointer-events: none;
-  // }
-  // .cursor {
-  //   width: 8px;
-  //   height: 8px;
-  //   background-color: #000;
-  //   z-index: 1001;
-  // }
-  // .follower {
-  //   width: 40px;
-  //   height: 40px;
-  //   background-color: #fdfe00;
-  //   z-index: 100;
-  // }
   &-inner {
     max-width: 1040px;
     width: 100%;
@@ -164,6 +146,23 @@
       }
     }
   }
+  .fix-desc {
+    display: none;
+    @include mq(medium) {
+      display: block;
+      position: sticky;
+      // bottom
+      width: 100%;
+      padding: 10px;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      bottom: 0;
+      left: 0;
+      // color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      z-index: 1;
+    }
+  }
 }
 </style>
 <script>
@@ -178,7 +177,7 @@ export default {
       'text06': 'ウェブサイトの<br>運用、保守、点検',
       'text07': '1文字～<br>ウェブサイトの修正作業',
       'text08': 'ラフ～カンプデザイン<br>コーディング代行'
-    }
+    };
   },
   methods: {
     mouseover01: function(){
@@ -229,34 +228,11 @@ export default {
     mouseleave08: function(){
       this.text08 ='ラフ～カンプデザイン<br>コーディング代行'
     },
-    // mousePosition: function(e){
-    //   const cWidth = 20,
-    //   mouseX = e.pageX,
-    //   mouseY = e.pageY;
-    //   console.log(mouseY)
-    // }
   },
-  // mounted : function() {
-  //   let cWidth = 20;
-  //   let mouseX = 0;
-  //   let mouseY = 0;
-  //   document.onmousemove = function(e) {
-      // let cursorFix = this.$refs.cursorFix;
-      // let cursorFix = document.getElementsByClassName('cursor');
-      // mouseX = e.pageX;
-      // mouseY = e.pageY;
-      // console.log(cursorFix)
-      // console.log(mouseY)
-      // cursorFix.style.width = 20;
-      // cursorFix.style.left = '20';
-      // cursorFix.style.color = '#f00';
-      // cursorFix.style.left = mouseX - (cWidth / 2);
-      // cursorFix.style.top = mouseY - (cWidth / 2);
-      // cursorFix.css({
-      //   left: mouseX - (cWidth / 2),
-      //   top: mouseY - (cWidth / 2)
-      // });
-    // }
-  // }
+  // mounted() {
+  //   const windowHight = window.innerHeight;
+  //   const target = document.querySelectorAll('.todo-block');
+  //   const onClass = 'js-on';
+  // },
 }
 </script>

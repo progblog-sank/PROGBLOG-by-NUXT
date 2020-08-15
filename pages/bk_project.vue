@@ -36,8 +36,7 @@ export default {
         title: 'PROJECT',
         description: 'このページではweb制作フリーランスPROGBLOGがVUE JSを使用し作成したプロジェクトを紹介いたします。',
         type: 'article',
-        url: 'https://example.com/project',
-        image: 'https://example.com/img/ogp/test.jpg',
+        url: 'https://nuxt.progblog-web.com/project',
       },
     }
   },
@@ -79,7 +78,7 @@ export default {
 }
 
 .project-block {
-  margin-top: 40px;
+  // margin-top: 40px;
   &-list {
     display: flex;
     flex-flow: wrap;

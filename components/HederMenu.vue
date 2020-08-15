@@ -86,6 +86,7 @@
       &-contact {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         .contact-point {
           margin-right: 20px;
           color: #777777;
