@@ -33,7 +33,7 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://nuxt.progblog-web.com' },
       { hid: 'og:title', property: 'og:title', content: 'PROGBLO by NUXT' },
       { hid: 'og:description', property: 'og:description', content: 'シングルページアプリケーションを実装できるnuxt.jsで作成したPROGBLOGのポートフォリオサイト' },
-      { hid: 'og:image', property: 'og:image', content: 'https://nuxt.progblog-web.com/img/ogp/ogp.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://nuxt.progblog-web.com/ogp.jpg' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
