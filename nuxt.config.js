@@ -32,7 +32,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://nuxt.progblog-web.com' },
       { hid: 'og:title', property: 'og:title', content: 'PROGBLO by NUXT' },
-      { hid: 'og:description', property: 'og:description', content: 'シングルページアプリケーションを実装できるnuxt.jsで作成したPROGBLOGのポートフォリオサイト' },
+      { hid: 'og:description', property: 'og:description', content: 'NUXT + Netlify + エックスサーバー + microCMS で作成したPROGBLOGのポートフォリオサイト' },
       { hid: 'og:image', property: 'og:image', content: 'https://nuxt.progblog-web.com/ogp.jpg' },
     ],
     link: [
