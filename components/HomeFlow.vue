@@ -154,13 +154,13 @@
       position: sticky;
       // bottom
       width: 100%;
-      padding: 10px;
+      padding: 2.5vh 10px;
       background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+      background-blend-mode: multiply,multiply;
       bottom: 0;
       left: 0;
       color: #ffffff;
-      font-size: 12px;
+      // font-size: 12px;
       text-align: center;
       z-index: 1;
     }
@@ -173,17 +173,17 @@ export default {
   data () {
     return {
       'flowTitle': 'ご相談／お問合せ',
-      'flowText': 'まずは「お問合せフォーム」からご連絡ください。詳細はヒアリングでお伺いしますが、お問合せ時点で作りたいサイトの形が決まっているようでしたら、その旨をご記入いただけますとスムーズに進行することができます。'
+      'flowText': 'まずは<a href ="contact" style ="display: inline-block; color: #1a0dab;">「お問合せフォーム」</a>からご連絡ください。詳細はヒアリングでお伺いしますが、お問合せ時点で作りたいサイトの形が決まっているようでしたら、その旨をご記入いただけますとスムーズに進行することができます。'
     }
   },
   methods: {
     flowOn01: function(){
       this.flowTitle = 'ご相談／お問合せ',
-      this.flowText = 'まずは「お問合せフォーム」からご連絡ください。詳細はヒアリングでお伺いしますが、お問合せ時点で作りたいサイトの形が決まっているようでしたら、その旨をご記入いただけますとスムーズに進行することができます。'
+      this.flowText = 'まずは<a href ="contact" style ="display: inline-block; color: #1a0dab;">「お問合せフォーム」</a>からご連絡ください。詳細はヒアリングでお伺いしますが、お問合せ時点で作りたいサイトの形が決まっているようでしたら、その旨をご記入いただけますとスムーズに進行することができます。'
     },
     flowOn02: function(){
       this.flowTitle = 'ヒアリング',
-      this.flowText = 'お客差がどのようなサイトを欲しがっているのかお伺いさせていただきます。「とにかく最速でで欲しい」「予算は○○円まで」「ブログ機能をつけてほしい」など、やりたいことをお聞かせください。参考サイトなどがあればご提示ください。'
+      this.flowText = 'お客差がどのようなサイトを欲しがっているのかお伺いさせていただきます。「とにかく最速で欲しい」「予算は○○円まで」「ブログ機能をつけてほしい」など、やりたいことをお聞かせください。参考サイトなどがあればご提示ください。'
     },
     flowOn03: function(){
       this.flowTitle = 'サイト構成／お見積りの提出',

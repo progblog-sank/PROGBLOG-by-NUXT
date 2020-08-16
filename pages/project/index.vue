@@ -1,7 +1,7 @@
 <template>
   <div class="main-content">
     <UnderlayerHaed>
-      <template v-slot:underHead>BLOG</template>
+      <template v-slot:underHead>PROJECT</template>
     </UnderlayerHaed>
     <div class="l-content">
       <SecondHead>

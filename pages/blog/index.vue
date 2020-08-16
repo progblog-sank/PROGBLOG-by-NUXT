@@ -5,8 +5,9 @@
     </UnderlayerHaed>
     <div class="l-content">
       <SecondHead>
-        <template v-slot:secondHead>最新記事一覧</template>
+        <template v-slot:secondHead>記事一覧</template>
       </SecondHead>
+      <p class="intro" >広く、浅く、細やかに。技術ブログを続けていく。</p>
       <div class="blog-block">
         <div class="blog-block-list" v-for="(item, index) in items" :key="index">
           <nuxt-link :to="'blog/' + item.id">

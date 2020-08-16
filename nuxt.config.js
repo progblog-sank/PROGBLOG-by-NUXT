@@ -117,7 +117,7 @@ export default {
     name: 'PROGBLO by NUXT',      // アプリの名称
     short_name: 'PROGBLO',    // ホーム画面に表示される名称
     display: 'standalone',     // 表示モード  'fullscreen' 'standalone' 'minimal-ui' 'browser'
-    theme_color: '#ffb8ab',    // アプリケーションの既定のテーマ色を定義
+    theme_color: '#000000',    // アプリケーションの既定のテーマ色を定義
     background_color: '#ffffff',  // 背景の色
     lang: 'ja',                // 言語
     start_url: '/?mode=pwa',   // アイコンから起動した時のURL

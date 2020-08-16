@@ -76,6 +76,7 @@
         text-align: center;
         transition: .3s;
         &:hover {
+          border-radius: 20px;
           background-color: #000000;
           color: #ffffff;
           font-size: 16px;
@@ -153,13 +154,13 @@
       position: sticky;
       // bottom
       width: 100%;
-      padding: 10px;
+      padding: 2.5vh 10px;
       background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+      background-blend-mode: multiply,multiply;
       bottom: 0;
       left: 0;
       color: #ffffff;
-      font-size: 12px;
+      // font-size: 12px;
       text-align: center;
       z-index: 1;
     }
@@ -170,7 +171,7 @@
 export default {
   data () {
     return {
-      'text01': 'HTML/CSS/Javascript<br>使用した静的サイト!',
+      'text01': 'HTML/CSS/Javascript<br>使用した静的サイト',
       'text02': 'wordpressの既存テーマを<br>カスタマイズした運用型サイト',
       'text03': 'wordpressのテーマを<br>新規作成した運用型サイト',
       'text04': 'Javascriptのフレームワークを<br>使用したモダンサイト',

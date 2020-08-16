@@ -9,23 +9,23 @@
           <div class="price-list-block">
             <div class="price-list-block-title">
               <div class="tilte-num"><span class="case">case<span class="num">01</span></span></div>
-              <div class="tilte-name">wordpress<br>テーマカスタマイズ</div>
+              <div class="tilte-name">WordPress<br>テーマカスタマイズ</div>
             </div>
             <div class="price-list-block-text">
-              <p>wordpressの公式テーマデザインをそのまま踏襲したウェブサイト制作。<br>とにかくサイトが欲しい方におすすめ</p>
+              <p>WordPressの既存テーマデザインをそのまま踏襲したウェブサイト制作。<br>とにかくサイトが欲しい方におすすめ</p>
             </div>
             <div class="price-list-block-merit">
               <p class="merit">メリット</p>
               <ul class="price-list-block-merit-list">
-                <li>広く使われているのでサイトのデザインが被ることもある</li>
-                <li>慣れてくると自らカスタマイズも可能に。</li>
+                <li>自らカスタマイズも可能。</li>
+                <li>ブログ標準装備</li>
                 <li>7日以内の納品が可能で、費用も抑えることが可能。</li>
               </ul>
             </div>
             <div class="price-list-block-demerit">
               <p class="demerit">デメリット</p>
               <ul class="price-list-block-demerit-list">
-                <li>広く使われているのでサイトのデザインが被ることもある</li>
+                <li>既存テーマをもとにするので、他サイトとテイストが被ることもある</li>
               </ul>
             </div>
             <div class="price">
@@ -35,7 +35,7 @@
           <div class="price-list-block">
             <div class="price-list-block-title">
               <div class="tilte-num"><span class="case">case<span class="num">02</span></span></div>
-              <div class="tilte-name">従来サイト<br>静的サイト制作</div>
+              <div class="tilte-name">HTMLサイト<br>静的サイト制作</div>
             </div>
             <div class="price-list-block-text">
               <p>HTML、CSSを使用しサイト制作。<br>更新頻度の低いサイトにおすすめ</p>
@@ -50,7 +50,7 @@
             <div class="price-list-block-demerit">
               <p class="demerit">デメリット</p>
               <ul class="price-list-block-demerit-list">
-                <li>運用は制作会社にお願いする必要がある</li>
+                <li>簡単な更新などの運用も含め制作会社にお願いする必要がある</li>
               </ul>
             </div>
             <div class="price">
@@ -60,22 +60,23 @@
           <div class="price-list-block">
             <div class="price-list-block-title">
               <div class="tilte-num"><span class="case">case<span class="num">03</span></span></div>
-              <div class="tilte-name">wordpress<br>テーマ作成</div>
+              <div class="tilte-name">WordPress<br>テーマ作成</div>
             </div>
             <div class="price-list-block-text">
-              <p>お客様だけのwordpressテーマを作成<br>ブログ機能などをつけたく、オリジナルデザインが欲しい方におすすめ</p>
+              <p>お客様だけのWordPressテーマを作成<br>ブログ機能などをつけたく、オリジナルデザインが欲しい方におすすめ</p>
             </div>
             <div class="price-list-block-merit">
               <p class="merit">メリット</p>
               <ul class="price-list-block-merit-list">
                 <li>他の人とデザインが被らない。</li>
+                <li>ブログ標準装備</li>
                 <li>カスタマイズの幅が広い</li>
               </ul>
             </div>
             <div class="price-list-block-demerit">
               <p class="demerit">デメリット</p>
               <ul class="price-list-block-demerit-list">
-                <li>簡単な修正はお客様でできるが、運用は制作会社にお願いする必要も出てくる</li>
+                <li>ブログ更新など簡単な修正はお客様でできるが、込み入った修正は制作会社にお願いする必要がある</li>
               </ul>
             </div>
             <div class="price">
