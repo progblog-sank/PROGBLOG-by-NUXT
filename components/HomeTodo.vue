@@ -76,7 +76,7 @@
         text-align: center;
         transition: .3s;
         &:hover {
-          border-radius: 20px;
+          // border-radius: 20px;
           background-color: #000000;
           color: #ffffff;
           font-size: 16px;
