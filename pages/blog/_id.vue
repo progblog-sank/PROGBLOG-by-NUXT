@@ -121,7 +121,7 @@ export default {
     /deep/ h3 {
       margin: 2em 0 1em 0;
       background-color: #F3F3F3;
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 15px;
       font-size: 22px;
       // color: #ffffff;
@@ -187,11 +187,19 @@ export default {
       font-style: italic;
     }
     /deep/ pre {
+      margin-top: 1em;
       padding: 20px;
       background-color: #000000;
       color: #ffffff;
       font-family: "SourceHanCodeJP-Regular";
       white-space: break-spaces;
+    }
+    /deep/ p > code {
+      margin: 0 2px;
+      padding: 2px;
+      border: 1px solid #ddd;
+      color: #ff357f;
+      font-size: 14px;
     }
     /deep/ a {
       display: inline-block;
