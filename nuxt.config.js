@@ -23,7 +23,7 @@ export default {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s ｜ PROGBLO by NUXT',
+    titleTemplate: '%s ｜ PROGBLOG by NUXT',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
