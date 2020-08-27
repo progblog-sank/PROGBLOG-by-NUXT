@@ -193,6 +193,7 @@ export default {
       color: #ffffff;
       font-family: "SourceHanCodeJP-Regular";
       white-space: break-spaces;
+      font-size: 12px;
     }
     /deep/ p > code {
       margin: 0 2px;
