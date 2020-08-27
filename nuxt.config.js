@@ -52,7 +52,6 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~plugins/ga.js', mode: 'client' }
   ],
   /*
   ** Auto import components
@@ -63,7 +62,11 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/google-analytics'
   ],
+  googleAnalytics: {
+    id: 'A-159398438-2' //自身のアナリティクスコード
+  },
   /*
   ** Nuxt.js modules
   */
