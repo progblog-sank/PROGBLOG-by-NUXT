@@ -15,7 +15,7 @@
             <div class="blog-info">
               <h3 class="blog-title">{{ item.title }}</h3>
               <div class="infomation">
-                <p class="cat-stamp">{{ item.cat }}</p>
+                <p class="cat-stamp">{{ item.cat.name }}</p>
                 <p class="time-stamp">公開日：{{ dateFormat(item.createdAt) }}</p>
               </div>
             </div>
@@ -55,9 +55,9 @@ export default {
   },
   async asyncData() {
     const{data} = await axios.get(
-      'https://nuxt-folio.microcms.io/api/v1/blog',
+      'https://nuxt-folio.microcms.io/api/v1/blog?limit=100',
       {
-        headers: { 'X-API-KEY': '99195fd3-127a-41ac-ba25-514c7b97e7e2' }
+        headers: { 'X-API-KEY': '99195fd3-127a-41ac-ba25-514c7b97e7e2' },
       }
     );
     return {
