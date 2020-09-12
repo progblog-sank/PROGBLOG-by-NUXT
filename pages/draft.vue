@@ -26,7 +26,12 @@ export default {
       // const outLink = document.querySelectorAll('a[target="_blank"]')
     });
   },
-  async asyncData({ params }) {
+  data() {
+    return {
+      data: {}
+    };
+  },
+  async created() {
     const query = this.$route.query;
     if (query.id === undefined || query.draftKey === undefined) {
       return;
@@ -36,10 +41,8 @@ export default {
       {
         headers: { 'X-API-KEY': '99195fd3-127a-41ac-ba25-514c7b97e7e2' }
       }
-    );
-    return {
-      item: data
-    };
+    )
+    this.data = data;
   },
   data () {
     return {
