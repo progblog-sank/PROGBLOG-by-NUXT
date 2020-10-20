@@ -1,4 +1,4 @@
-<template>
+a<template>
 <div>
   <MousePointer>
   <HederMenu />

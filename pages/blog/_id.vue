@@ -181,6 +181,7 @@ export default {
       }
     }
     /deep/ blockquote {
+      margin-top: 20px;
       padding: 20px;
       background-color: #EFEFEF;
       border-radius: 20px;
