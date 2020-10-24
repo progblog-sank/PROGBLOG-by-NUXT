@@ -13,7 +13,7 @@
       </div>
       <div class="project-block">
         <div class="project-block-list" v-for="(item, index) in items" :key="index">
-          <a href="item.url">
+          <a :href="item.url">
             <p class="key-catch"> <img :src="item.key.url" alt=""></p>
             <div class="project-info">
               <h3 class="project-title">{{ item.title }}</h3>
