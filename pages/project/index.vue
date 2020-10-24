@@ -13,7 +13,7 @@
       </div>
       <div class="project-block">
         <div class="project-block-list" v-for="(item, index) in items" :key="index">
-          <nuxt-link :to="item.url">
+          <a href="item.url">
             <p class="key-catch"> <img :src="item.key.url" alt=""></p>
             <div class="project-info">
               <h3 class="project-title">{{ item.title }}</h3>
@@ -22,7 +22,7 @@
                 <p class="time-stamp">公開日：{{ dateFormat(item.createdAt) }}</p>
               </div>
             </div>
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>
